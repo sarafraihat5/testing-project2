@@ -1,6 +1,6 @@
 public class DiscountCalculator {
 
-    public double calculateDiscount(String customerType, int totalOrdersInLastYear, boolean isSubscribedToNewsletter) {
+    public static double calculateDiscount(String customerType, int totalOrdersInLastYear, boolean isSubscribedToNewsletter) {
         // 1. Infeasible Constraint
         if (customerType.equalsIgnoreCase("NEW") && totalOrdersInLastYear >= 10) {
             throw new IllegalArgumentException("NEW customers cannot have 10 or more orders.");
